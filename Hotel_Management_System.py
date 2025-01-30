@@ -114,16 +114,11 @@ def PrintUserData(userName, userId, bookingCost, hotels):
 
 # Functiont to solve
 # Hotel Management problem
-def HotelManagement(userName,
-					userId,
-					hotelName,
-					bookingCost,
-					rooms,
-					locations,
-					ratings,
-					prices):
+def HotelManagement(userName,userId,hotelName,bookingCost,rooms,locations,ratings,prices):
+	
 	# Initialize arrays that stores
 	# hotel data and user data
+	
 	hotels=[]
 
 	# Create Objects for
@@ -142,16 +137,13 @@ def HotelManagement(userName,
 	print()
 
 	# Call the various operations
+	
 	PrintHotelData(hotels)
 	SortHotelByName(hotels)
 	SortHotelByRating(hotels)
-	PrintHotelBycity("Bangalore",
-					hotels)
+	PrintHotelBycity("Bangalore",hotels)
 	SortByRoomAvailable(hotels)
-	PrintUserData(userName,
-				userId,
-				bookingCost,
-				hotels)
+	PrintUserData(userName,userId,bookingCost,hotels)
 
 
 # Driver Code.
@@ -159,19 +151,15 @@ if __name__ == '__main__':
 
 	# Initialize variables to stores
 	# hotels data and user data.
+	
 	userName = ["U1", "U2", "U3"]
 	userId = [2, 3, 4]
 	hotelName = ["H1", "H2", "H3"]
 	bookingCost = [1000, 1200, 1100]
 	rooms = [4, 5, 6]
-	locations = ["Bangalore",
-						"Bangalore",
-						"Mumbai"]
+	locations = ["Bangalore","Bangalore","Mumbai"]
 	ratings = [5, 5, 3]
 	prices = [100, 200, 100]
 
 	# Function to perform operations
-	HotelManagement(userName, userId,
-					hotelName, bookingCost,
-					rooms, locations,
-					ratings, prices)
+	HotelManagement(userName, userId,hotelName, bookingCost,rooms, locations,ratings, prices)
